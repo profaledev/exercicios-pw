@@ -101,3 +101,10 @@ Para entender melhor as práticas sustentáveis na sua comunidade, crie um formu
 Adotar práticas sustentáveis é fundamental para a conservação do meio ambiente e para garantir um futuro melhor para as próximas gerações. Cada pequena ação conta e pode fazer a diferença!
 
 ---
+
+> ### Prototipo 
+> todo os textos conteúdo e exemplos estão nesse material a imagem a baixo tem um exemplo de como deve ficar, não precisa ficar indentico, mais o requisito é que todas as informações da atividade deve ser inserida conforme o enuciado
+
+![Protótipo apenas com HTML](./prototipo.gif)
+
+
