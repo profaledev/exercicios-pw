@@ -1,0 +1,202 @@
+/* RESET BASICO: seleciona todos os elementos da pagina. */
+* {
+  /* Remove o espaco externo padrao dos elementos. */
+  margin: 0;
+  /* Remove o espaco interno padrao dos elementos. */
+  padding: 0;
+  /* Faz a largura e a altura incluirem o preenchimento e a borda. */
+  box-sizing: border-box;
+}
+
+/* Seleciona o corpo inteiro da pagina. */
+body {
+  /* Define a familia de fontes usada pelos textos. */
+  font-family: "Roboto", sans-serif;
+  /* Cria um fundo com transicao entre duas cores. */
+  background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+  /* Define a cor padrao dos textos. */
+  color: #2c3e50;
+  /* Cria um espaco interno de 20 pixels em todos os lados. */
+  padding: 20px;
+}
+
+/* Seleciona todos os titulos de nivel 1. */
+h1 {
+  /* Define o tamanho da letra; rem se adapta ao tamanho base do navegador. */
+  font-size: 2.5rem;
+  /* Cria espaco abaixo do titulo. */
+  margin-bottom: 20px;
+  /* Centraliza o texto horizontalmente. */
+  text-align: center;
+  /* Transforma as letras do titulo em maiusculas. */
+  text-transform: uppercase;
+  /* Define a cor do titulo. */
+  color: #34495e;
+  /* Deixa o texto em negrito. */
+  font-weight: bold;
+}
+
+/* Seleciona qualquer elemento que tenha a classe "avatar". */
+.avatar {
+  /* Define a largura da imagem. */
+  width: 120px;
+  /* Define a altura da imagem. */
+  height: 120px;
+  /* Arredonda a imagem ate formar um circulo. */
+  border-radius: 50%;
+  /* Centraliza a imagem e remove espaco externo vertical. */
+  margin: 0 auto;
+  /* Faz a imagem ocupar sua propria linha, permitindo a centralizacao. */
+  display: block;
+  /* Cria um fundo em degradê para o elemento. */
+  background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+  /* Adiciona uma sombra ao redor da imagem. */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Seleciona o elemento que possui a classe "section". */
+.section {
+  /* Define um fundo branco quase transparente. */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Cria espaco entre a borda e o conteudo. */
+  padding: 30px;
+  /* Arredonda os cantos da secao. */
+  border-radius: 10px;
+  /* Adiciona uma sombra abaixo da secao. */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Cria espaco abaixo da secao. */
+  margin-bottom: 40px;
+}
+
+/* Seleciona apenas os paragrafos que estao dentro da classe "section". */
+.section p {
+  /* Define o tamanho da letra do paragrafo. */
+  font-size: 1.2rem;
+  /* Cria espaco abaixo do paragrafo. */
+  margin-bottom: 20px;
+  /* Aumenta o espaco entre as linhas para facilitar a leitura. */
+  line-height: 1.6;
+  /* Define novamente o espaco abaixo; este valor substitui o anterior. */
+  margin-bottom: 15px;
+  /* Define a cor do texto do paragrafo. */
+  color: #7f8c8d;
+  /* Alinha o texto pelas duas margens. */
+  text-align: justify;
+  /* Deixa o texto inclinado. */
+  font-style: italic;
+}
+
+/* Seleciona a tabela da pagina. */
+table {
+  /* Faz a tabela ocupar toda a largura disponivel. */
+  width: 100%;
+  /* Junta as bordas vizinhas em uma unica borda. */
+  border-collapse: collapse;
+  /* Cria espaco acima da tabela. */
+  margin-top: 20px;
+  /* Cria espaco abaixo da tabela. */
+  margin-bottom: 20px;
+}
+
+/* Seleciona as celulas de cabecalho e as celulas comuns da tabela. */
+th,
+td {
+  /* Cria espaco interno em todas as celulas. */
+  padding: 12px;
+  /* Alinha o conteudo das celulas a esquerda. */
+  text-align: left;
+  /* Adiciona uma borda fina e cinza em cada celula. */
+  border: 1px solid #dcdcdc;
+}
+
+/* Seleciona as celulas que formam o cabecalho da tabela. */
+th {
+  /* Coloca um fundo escuro no cabecalho. */
+  background-color: #34495e;
+  /* Define a cor clara do texto do cabecalho. */
+  color: #ecf0f1;
+}
+
+/* Seleciona as linhas pares da tabela. */
+tr:nth-child(even) {
+  /* Usa uma cor de fundo diferente nas linhas pares. */
+  background-color: #ecf0f1;
+  /* Linhas pares: 2a, 4a, 6a e assim por diante. */
+}
+
+/* Seleciona as linhas impares da tabela. */
+tr:nth-child(odd) {
+  /* Usa outra cor de fundo nas linhas impares. */
+  background-color: #c3c3c3;
+  /* Linhas impares: 1a, 3a, 5a e assim por diante. */
+}
+
+/* Seleciona o formulario da pagina. */
+form {
+  /* Cria espaco acima do formulario. */
+  margin-top: 20px;
+  /* Define a cor dos textos do formulario. */
+  color: #34495e;
+  /* Cria espaco abaixo do formulario. */
+  margin-bottom: 20px;
+  /* Define um fundo branco quase transparente. */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Cria espaco interno entre a borda e os campos. */
+  padding: 30px;
+  /* Arredonda os cantos do formulario. */
+  border-radius: 10px;
+  /* Permite que o formulario ocupe toda a largura disponivel. */
+  width: 100%;
+  /* Impede que o formulario ultrapasse 400 pixels de largura. */
+  max-width: 400px;
+  /* Centraliza o formulario horizontalmente. */
+  margin: 0 auto;
+  /* Adiciona uma sombra ao redor do formulario. */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Seleciona os textos que identificam os campos do formulario. */
+label {
+  /* Define o tamanho da letra dos rotulos. */
+  font-size: 1rem;
+  /* Cria um pequeno espaco abaixo do rotulo. */
+  margin-bottom: 5px;
+  /* Faz cada rotulo ocupar sua propria linha. */
+  display: block;
+}
+
+/* Seleciona os campos de texto, e-mail e o botao de envio. */
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  /* Faz cada campo ocupar toda a largura do formulario. */
+  width: 100%;
+  /* Cria espaco interno para deixar o campo mais confortavel. */
+  padding: 12px;
+  /* Cria espaco abaixo de cada campo. */
+  margin-bottom: 15px;
+  /* Arredonda os cantos dos campos. */
+  border-radius: 5px;
+  /* Define uma borda fina para os campos. */
+  border: 1px solid #bdc3c7;
+}
+
+/* Seleciona somente o botao de envio. */
+input[type="submit"] {
+  /* Faz a mudanca de estilo acontecer suavemente em 0,3 segundo. */
+  transition: all linear 0.3s;
+  /* Define a cor de fundo do botao. */
+  background-color: #3498db;
+  /* Define a cor do texto do botao. */
+  color: #ecf0f1;
+  /* Mostra uma maozinha quando o mouse passa sobre o botao. */
+  cursor: pointer;
+  /* Deixa o texto do botao em negrito. */
+  font-weight: bold;
+}
+
+/* Aplica estilos ao botao quando o mouse passa sobre ele. */
+input[type="submit"]:hover {
+  /* Troca a cor do botao durante o estado de passar o mouse. */
+  background-color: rgb(97, 182, 239);
+}

@@ -1,0 +1,102 @@
+<!-- Declara que o documento utiliza HTML5. -->
+<!DOCTYPE html>
+<!-- Elemento raiz do documento, com o idioma definido como português do Brasil. -->
+<html lang="pt-BR">
+  <!-- Contém metadados e recursos externos da página. -->
+  <head>
+    <!-- Define a codificação de caracteres como UTF-8. -->
+    <meta charset="UTF-8" />
+    <!-- Ajusta a largura e a escala da página em dispositivos móveis. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Define o título exibido na aba do navegador. -->
+    <title>Aula CSS</title>
+    <!-- Importa o arquivo de estilos CSS da página. -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- Contém todo o conteúdo visível da página. -->
+  <body>
+    <!-- Exibe a imagem de avatar do perfil. -->
+    <img
+      src="https://avatars.githubusercontent.com/u/310745325?v=4"
+      alt="imagem de avatar"
+      srcset=""
+      class="avatar"
+    />
+    <!-- Exibe o nome principal da página como um título de nível 1. -->
+    <h1>Alessandro Barbosa Vitorio</h1>
+
+    <!-- Agrupa o conteúdo principal da seção. -->
+    <div class="section">
+      <!-- Apresenta uma descrição introdutória da página. -->
+      <p>
+        Bem-vindo à nossa página! Este site foi projetado para demonstrar a
+        importância do design elegante e clean, com uma paleta de cores sóbria,
+        mas moderna. Como exemplo, temos uma tabela com estilo zebra e um
+        formulário de contato estilizado. Tudo foi pensado para garantir a
+        melhor experiência de navegação
+      </p>
+      
+      <!-- Cria uma tabela para exibir dados de pessoas. -->
+      <table>
+        <!-- Agrupa o cabeçalho da tabela. -->
+        <thead>
+          <!-- Define uma linha do cabeçalho. -->
+          <tr>
+            <!-- Define o título da coluna de identificadores. -->
+            <th>id</th>
+            <!-- Define o título da coluna de nomes. -->
+            <th>nome</th>
+            <!-- Define o título da coluna de e-mails. -->
+            <th>email</th>
+          </tr>
+        </thead>
+        <!-- Agrupa as linhas com os dados da tabela. -->
+        <tbody>
+            <!-- Define a primeira linha de dados. -->
+            <tr>
+                <!-- Exibe o identificador da primeira pessoa. -->
+                <td>1</td>
+                <!-- Exibe o nome da primeira pessoa. -->
+                <td>Alessandro Barbosa Vitorio</td>
+                <!-- Exibe o e-mail da primeira pessoa. -->
+                <td>asovitorio@gmail.com</td>
+            </tr>
+            <!-- Define a segunda linha de dados. -->
+            <tr>
+                <!-- Exibe o identificador da segunda pessoa. -->
+                <td>2</td>
+                <!-- Exibe o nome da segunda pessoa. -->
+                <td>Erick Pietro</td>
+                <!-- Exibe o e-mail da segunda pessoa. -->
+                <td>eric@gmail.com</td>
+            </tr>
+            <!-- Define a terceira linha de dados. -->
+            <tr>
+                <!-- Exibe o identificador da terceira pessoa. -->
+                <td>3</td>
+                <!-- Exibe o nome da terceira pessoa. -->
+                <td>Sandra F. Vitorio</td>
+                <!-- Exibe o e-mail da terceira pessoa. -->
+                <td>sadra@gmail.com</td>
+            </tr>
+        </tbody>
+      </table>
+
+      <!-- Cria o formulário para envio dos dados de contato. -->
+      <form action="">
+        <!-- Identifica o campo destinado ao nome. -->
+        <label for="nome">Nome:</label>
+        <!-- Permite a digitação do nome, tornando o preenchimento obrigatório. -->
+        <input type="text" id="nome" name="nome" required>
+
+        <!-- Identifica o campo destinado ao e-mail. -->
+        <label for="email">Email:</label>
+        <!-- Permite a digitação de um e-mail válido, tornando o preenchimento obrigatório. -->
+        <input type="email" id="email" name="email" required>
+        <!-- Cria o botão que envia o formulário. -->
+        <input type="submit" value="Enviar">
+      </form>
+
+    </div>
+  </body>
+</html>
