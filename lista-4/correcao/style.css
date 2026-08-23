@@ -1,0 +1,412 @@
+/* ============================================================
+   style.css - O PODER DO CSS
+   ------------------------------------------------------------
+   Alunos: vejam como o MESMO HTML que vocês fizeram muda
+   completamente só com uma folha de estilos. Isso é o CSS!
+   ============================================================ */
+
+/* IMPORTANDO UMA FONTE DA INTERNET (Poppins - bem moderna) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+/* ============================================================
+   1) CORES DO SITE (variáveis CSS = "caixinhas" de cores)
+   Paleta nova: oceano profundo + terra (areia e argila)
+   ============================================================ */
+:root {
+  --azul-profundo: #123e4d;  /* cor principal (títulos, cabeçalhos) */
+  --teal: #1f7a8c;           /* teal médio (detalhes, links) */
+  --areia: #faf3e8;          /* fundo suave dos cartões */
+  --terracota: #e07b54;      /* tom de argila (acentos que "gritam") */
+  --texto: #24333a;
+  --branco: #ffffff;
+  --sombra: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ============================================================
+   2) "RESET" BÁSICO - zera as margens que o navegador coloca
+   sozinho, pra gente começar do zero
+   ============================================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================================================
+   3) FUNDO DO SITE - uma IMAGEM de fundo sem poluir o texto
+   ------------------------------------------------------------
+   Truque didático: usamos a MESMA imagem da atividade
+   (pilares-da-sustentabilidade.jpg) e colocamos por cima dela
+   um "véu" escuro (linear-gradient com transparência).
+   É isso que deixa a foto bonita, mas o texto legível!
+   ============================================================ */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background:
+    linear-gradient(rgba(18, 62, 77, 0.88), rgba(18, 62, 77, 0.94)),
+    url("pilares-da-sustentabilidade.jpg") center / cover no-repeat fixed;
+  color: var(--texto);
+  line-height: 1.8;
+  padding: 40px 15px;
+}
+
+/* ============================================================
+   4) AS SEÇÕES VIRAM "CARTÕES" DE VIDRO FOSCO (glassmorphism)
+   Cada <section> agora parece um cartão de vidro flutuante.
+   ============================================================ */
+section {
+  max-width: 900px;
+  margin: 0 auto 60px auto;  /* centraliza e separa uma da outra */
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px); /* desfoca a imagem atrás do cartão */
+  border-radius: 25px;
+  padding: 45px 55px;
+  box-shadow: var(--sombra);
+  border-top: 8px solid var(--terracota);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* EFEITO "WOW": quando passa o mouse, o cartão LEVITA */
+section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(18, 62, 77, 0.45);
+}
+
+/* ============================================================
+   5) TÍTULOS - o segredo do "uau" está nos degradês de texto
+   ============================================================ */
+
+/* Título principal: letra gigante, em degradê e com brilho */
+h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--azul-profundo);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 18px;
+  margin-bottom: 25px;
+  border-bottom: 4px solid var(--terracota);
+  background: linear-gradient(90deg, #123e4d, #1f7a8c, #e07b54);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--azul-profundo);
+  margin: 30px 0 15px 0;
+  padding-left: 15px;
+  border-left: 6px solid var(--terracota);
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: var(--teal);
+  margin: 25px 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ============================================================
+   6) PARÁGRAFOS E DESTAQUES
+   ============================================================ */
+p {
+  margin-bottom: 15px;
+  font-size: 1.02rem;
+}
+
+/* O <strong> vira um "marca-texto" areia - impossível não ler */
+strong {
+  color: var(--azul-profundo);
+  background: var(--areia);
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* ============================================================
+   7) A LINHA <hr> - de simples virou um detalhe decorativo
+   ============================================================ */
+hr {
+  border: none;
+  height: 5px;
+  background: linear-gradient(90deg, var(--terracota), var(--teal), var(--terracota));
+  border-radius: 10px;
+  margin: 10px 0 25px 0;
+}
+
+/* ============================================================
+   8) TABELAS - listradas como zebra, com efeito ao passar
+   o mouse em cada linha. Sempre impressiona!
+   ============================================================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0 30px 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+/* Cabeçalho da tabela com fundo azul profundo e letra branca */
+th {
+  background: var(--azul-profundo);
+  color: var(--branco);
+  padding: 14px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e8ddcc;
+}
+
+/* Linhas pares ficam com fundo areia (efeito zebra) */
+tr:nth-child(even) {
+  background: var(--areia);
+}
+
+/* Ao passar o mouse, a linha inteira acende em tom de argila */
+tr:hover {
+  background: #ffe3d0;
+  cursor: pointer;
+}
+
+/* ============================================================
+   9) LISTAS - marcadores viram emojis (sim, é só isso!)
+   ============================================================ */
+ol {
+  margin: 15px 0 25px 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  background: var(--areia);
+  border-left: 4px solid var(--teal);
+  border-radius: 8px;
+  list-style-position: inside;
+}
+
+ol li::marker {
+  color: var(--teal);
+  font-weight: 800;
+}
+
+/* ============================================================
+   10) IMAGEM <figure> - virou uma moldura de galeria de arte
+   ============================================================ */
+figure {
+  margin: 25px 0;
+  text-align: center;
+  background: var(--areia);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border: 5px solid var(--branco);
+  box-shadow: var(--sombra);
+  transition: transform 0.4s ease;
+}
+
+/* A imagem "dá zoom" quando o mouse chega perto */
+figure img:hover {
+  transform: scale(1.03);
+}
+
+figcaption {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #6b5b4e;
+  font-style: italic;
+}
+
+/* ============================================================
+   11) FORMULÁRIOS - os campos viram "caixinhas" redondinhas
+   ============================================================ */
+fieldset {
+  border: 2px solid #e0d3bf;
+  border-radius: 18px;
+  padding: 25px;
+  margin: 20px 0;
+  background: #fdf9f2;
+}
+
+legend {
+  background: var(--teal);
+  color: var(--branco);
+  padding: 6px 18px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+label {
+  font-weight: 600;
+  color: var(--azul-profundo);
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0 15px 0;
+  border: 2px solid #d9cdb8;
+  border-radius: 12px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1rem;
+  background: var(--branco);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+/* Ao clicar no campo, ele "acende" com uma borda teal brilhante */
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 4px rgba(31, 122, 140, 0.25);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Radio buttons coloridos de teal (propriedade moderna) */
+input[type="radio"] {
+  accent-color: var(--teal);
+  width: 18px;
+  height: 18px;
+  margin: 0 5px 0 12px;
+}
+
+/* O BOTÃO - o grande herói da página */
+input[type="submit"] {
+  background: linear-gradient(135deg, var(--azul-profundo), var(--teal));
+  color: var(--branco);
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-family: 'Poppins', Arial, sans-serif;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(18, 62, 77, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* O botão pula para cima e brilha ao passar o mouse */
+input[type="submit"]:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 14px 30px rgba(18, 62, 77, 0.5);
+}
+
+/* ============================================================
+   12) LINKS - sublinhado animado (efeito super famoso)
+   ============================================================ */
+a {
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Cria um "traço" que aparece por baixo do link */
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background: var(--terracota);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* O traço cresce quando o mouse chega */
+a:hover::after {
+  width: 100%;
+}
+
+/* ============================================================
+   13) DETALHES FINAIS (os "toques de mágica")
+   ============================================================ */
+
+/* Texto selecionado com o mouse fica teal - experimental! */
+::selection {
+  background: var(--teal);
+  color: var(--branco);
+}
+
+/* Barra de rolagem personalizada (funciona no Chrome/Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--areia);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--teal);
+  border-radius: 20px;
+  border: 3px solid var(--areia);
+}
+
+/* Animação de entrada: o conteúdo surge flutuando */
+section {
+  animation: subir 0.8s ease;
+}
+
+@keyframes subir {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================================
+   14) CELULARES - o site se adapta a telas pequenas
+   ============================================================ */
+@media (max-width: 700px) {
+  body {
+    padding: 15px;
+  }
+
+  section {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  /* Em telas pequenas, o efeito de "levitar" fica desligado */
+  section:hover {
+    transform: none;
+  }
+}
