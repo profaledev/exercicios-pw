@@ -12,9 +12,9 @@ Este repositório contém exercícios práticos para a disciplina de **Programa�
 - [📜 Lista 6 - Exercício HTML, CSS, Box Model, Posicionamento, Box-Sizing, e Display](./lista-6/pw-lista-6.md)
 - [📜 Lista 7 - Exercício Flex Box - Flex Container](./lista-7)  
 - [📜 Lista 8 - Projeto - 1: craftsy-blended](./lista-8/)  
-- [📜 Lista 9 - Projeto - 2:]() [clone de calculadora](./lista-10/calculadora/) e [clone landing-page](./lista-10/land-page/)
+<!-- - [📜 Lista 9 - Projeto - 2:]() [clone de calculadora](./lista-10/calculadora/) e [clone landing-page](./lista-10/land-page/)
 - [📜 Lista 10 - Projeto: Final](./lista-11/)  
-- [📜 Lista 11 - Exercícios: javascript-basico](./pw-lista-12/)-->  
+- [📜 Lista 11 - Exercícios: javascript-basico](./pw-lista-12/)-->   
 ## 🚀 Como Usar  
 
 1. Clique no link da lista desejada para visualizar os exercícios.  
