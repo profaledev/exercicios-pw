@@ -43,9 +43,9 @@ O time de desenvolvimento poderá ter até três Participantes.
 
 ## 📅 Prazo de Entrega
  
-O projeto deve ser entregue até o **dia 31/10/2025**. Então, sem enrolar! Qualquer dúvida, bora trocar ideia e resolver juntos. 😃
+O projeto deve ser entregue até o **dia 09/10/2025**. Então, sem enrolar! Qualquer dúvida, bora trocar ideia e resolver juntos. 😃
 
 ## 🚀 Bora codar!
 
-Esse é o momento de colocar em prática tudo que aprendemos. Organizem bem os arquivos, sigam as diretrizes e caprichem no layout! Qualquer dúvida, estamos aí para ajudar. 💡💻
+Esse é o momento de colocar em prática tudo que aprendemos. Organizem bem os arquivos, sigam as diretrizes e caprichem mais sejam fiel no layout! Qualquer dúvida, estamos aí para ajudar. 💡💻
 
