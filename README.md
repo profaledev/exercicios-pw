@@ -13,7 +13,7 @@ Este repositório contém exercícios práticos para a disciplina de **Programa�
 - [📜 Lista 7 - Exercício Flex Box - Flex Container](./lista-7)  
 - [📜 Lista 8 - Projeto - 1: craftsy-blended](./lista-8/)  
 - [📜 Lista 9 - Projeto - 2:]() [clone de calculadora](./lista-9/calculadora/) e [clone landing-page](./lista-9/land-page/)
-- [📜 Lista 10 - Projeto - livre :]()
+- [📜 Lista 10 - Projeto - livre :](./lista-10/)
 <!--- [📜 Lista 10 - Projeto: Final](./lista-11/)  
 - [📜 Lista 11 - Exercícios: javascript-basico](./pw-lista-12/)-->   
 ## 🚀 Como Usar  
